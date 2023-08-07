@@ -1,9 +1,26 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.header}>
+        <div>
+          <Image
+            src="/companyLogo.svg"
+            alt="Vercel Logo"
+            className={styles.companyLogo}
+            width={199}
+            height={47}
+            priority
+          />
+        </div>
+        <div className={styles.rightSideHeader}>
+          <button className={styles.startupsContactButton}>Startups</button>
+          <button className={styles.startupsContactButton}>Contact</button>
+          <button className={styles.workWithUsButton}>Work with us!</button>
+        </div>
+      </div>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -15,7 +32,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +108,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
