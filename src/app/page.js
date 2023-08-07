@@ -41,12 +41,71 @@ export default function Home() {
           />
         </div>
       </div>
+
+      <div className={styles.whoWeAre}>
+        <span className={styles.whoWeAreText1}>Who we are</span>
+        <span className={styles.whoWeAreText2}>
+          We create products that have innovation and technology at their core.{" "}
+          <br />
+          We value working with talented people that understand the
+          possibilities of today.
+        </span>
+        <Image
+          src="/artworkQuestion.svg"
+          alt="Vercel Logo"
+          className={styles.artworkQuestion}
+          width={75}
+          height={88}
+          priority
+        />
+        <div className={styles.whoWeArePoints}>
+          <div className={styles.whoWeArePoint1}>
+            <span className={styles.whoWeArePointNumber}> 01</span>
+            <span className={styles.whoWeArePointText}>
+              We develop innovative <br /> products, systems and <br /> services
+            </span>
+          </div>
+
+          <div className={styles.whoWeArePoint2}>
+            <span className={styles.whoWeArePointNumber}> 02</span>
+            <span className={styles.whoWeArePointText}>
+              Next we build teams to <br /> scale them into <br /> companies
+            </span>
+          </div>
+
+          <div className={styles.whoWeArePoint3}>
+            <span className={styles.whoWeArePointNumber}> 03</span>
+            <span className={styles.whoWeArePointText}>
+              Each startup solving <br /> one problem <br /> at a time
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.solvingProblem}>
+      <Image
+          src="/thumb.svg"
+          alt="Vercel Logo"
+          width={59}
+          height={66}
+          priority
+        />
+        <span className={styles.solvingProblemText}>
+        We love solving problems!
+        </span>
+        <Image
+          src="/thumb.svg"
+          alt="Vercel Logo"
+          className={styles.solvingProblemRightImage}
+          width={59}
+          height={66}
+          priority
+        />
+
+</div>
+
+      {/* //////////////////////////////////////// */}
       <div className={styles.all}>
         <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/app/page.js</code>
-          </p>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
