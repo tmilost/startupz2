@@ -168,9 +168,21 @@
   }
 
   .solvingProblem {
-    
+    display: flex;
+    justify-content: center;
+    padding: 156px 0 140px 0;
     .solvingProblemText {
-    
+      color: var(--primary-orange, #FB8958);
+      text-align: center;
+      font-family: Circular Std;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px; /* 125% */
+      letter-spacing: -0.4px;
+    }
+    .solvingProblemRightImage {
+      transform: scaleX(-1);
     }
   }
 }
