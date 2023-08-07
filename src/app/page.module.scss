@@ -1,53 +1,101 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  margin: auto;
   min-height: 100vh;
-}
-
-.header {
   max-width: 1440px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 119px;
-  align-items: center;
-  padding: 0 120px 0 120px;
 
-  .rightSideHeader {
+  .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    color: #3d4f5c;
+    justify-content: space-between;
+    height: 119px;
+    align-items: center;
+    padding: 0 120px 0 120px;
 
-    & > *:not(:last-child) {
-      margin-right: 40px;
-    }
-    .startupsContactButton {
-      border: 0px;
-      background-color: transparent;
+    .rightSideHeader {
+      display: flex;
+      flex-direction: row;
       color: #3d4f5c;
-      font-family: Circular Std;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 18px; /* 100% */
-      letter-spacing: -0.18px;
-    }
-    .workWithUsButton {
-      width: 185px;
-      height: 45px;
-      flex-shrink: 0;
-      border-radius: 32.5px;
-      color: #46b8c8;
 
-      border: 1px solid #46b8c8;
-      background-color: transparent;
+      & > *:not(:last-child) {
+        margin-right: 40px;
+      }
+      .startupsContactButton {
+        border: 0;
+        background-color: transparent;
+        color: #3d4f5c;
+        font-family: Circular Std;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 100% */
+        letter-spacing: -0.18px;
+      }
+      .workWithUsButton {
+        width: 185px;
+        height: 45px;
+        flex-shrink: 0;
+        border-radius: 32.5px;
+        color: #46b8c8;
+
+        border: 1px solid #46b8c8;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .seeOurWorks {
+    position: relative;
+    padding-top: 140px;
+    .seeOurWorksText {
+      position: absolute;
+      padding-left: 120px;
+      .seeOurWorksTextOne {
+        color: #3d4f5c;
+        font-family: Circular Std;
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85px;
+        letter-spacing: -1.7px;
+        padding-bottom: 25px;
+      }
+      .seeOurWorksTextTwo {
+        color: var(--primary-orange, #fb8958);
+        font-family: Circular Std;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.24px;
+        padding-bottom: 25px;
+      }
+      .workWithUsButton {
+        width: 157px;
+        height: 45px;
+        flex-shrink: 0;
+        border: 0;
+        border-radius: 32.5px;
+        background: #46b8c8;
+        color: #fff;
+        font-family: Circular Std;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.18px;
+      }
+    }
+    .seeOurWorksImage {
+      position: absolute;
+      right: 0;
+      display: block;
     }
   }
 }
-
+.all {
+  padding-top: 500px;
+}
 .description {
   display: inherit;
   justify-content: inherit;
