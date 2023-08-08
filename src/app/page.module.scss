@@ -375,6 +375,107 @@
     }
   }
 }
+
+.areYouReady {
+  background: var(--secondary-yellow, #ffc351);
+  padding: 60px 0 70px 124px;
+  height: 933px;
+
+  .areYouReadyTitle {
+    color: #fff;
+    font-family: Circular Std;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px; /* 91.667% */
+    letter-spacing: -1.2px;
+  }
+  .areYouReadyText {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 100% */
+    letter-spacing: -0.24px;
+    margin: 34px 0 34px 0;
+  }
+  .areYouReadyMessageCard {
+    position: absolute;
+    padding: 72px 42px 40px 42px;
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+    z-index: 10;
+    .areYouReadyMessageCardInputName {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+      border: 0;
+      width: 429px;
+      height: 54px;
+      padding: 18px 16px;
+      margin-bottom: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .areYouReadyMessageCardInputEmail {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+      border: 0;
+      width: 429px;
+      height: 54px;
+      padding: 18px 16px;
+      margin-bottom: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .areYouReadyMessageCardInputMessage {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+      border: 0;
+      width: 429px;
+      height: 270px;
+      padding: 18px 16px;
+      margin-bottom: 34px;
+      resize: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .areYouReadyMessageCardButton {
+      width: 243px;
+      height: 45px;
+      border-radius: 32.5px;
+      border: 1px solid #3d4f5c;
+      background: #3d4f5c;
+
+      color: #fbfbfa;
+      text-align: center;
+      font-family: Circular Std;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px; /* 100% */
+      margin: 0 auto 0 auto;
+    }
+  }
+  .areYouReadyImageRocket {
+    position: absolute;
+    right: 111px;
+    bottom: 0;
+  }
+  position: relative;
+}
 ///////////////////////////////////
 .all {
   padding-top: 500px;

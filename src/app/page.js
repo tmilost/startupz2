@@ -34,8 +34,8 @@ export default function Home() {
         <div className={styles.seeOurWorksImage}>
           <Image
             src="/artwork.svg"
-            alt="Vercel Logo"
-            width={704}
+            alt="artwork"
+            width={705}
             height={507}
             priority
           />
@@ -56,7 +56,7 @@ export default function Home() {
           className={styles.artworkQuestion}
           width={75}
           height={88}
-          priority
+          loading="lazy"
         />
         <div className={styles.whoWeArePoints}>
           <div className={styles.whoWeArePoint1}>
@@ -87,7 +87,7 @@ export default function Home() {
           alt="Vercel Logo"
           width={59}
           height={66}
-          priority
+          loading="lazy"
         />
         <span className={styles.solvingProblemText}>
           We love solving problems!
@@ -98,7 +98,7 @@ export default function Home() {
           className={styles.solvingProblemRightImage}
           width={59}
           height={66}
-          priority
+          loading="lazy"
         />
       </div>
 
@@ -110,7 +110,7 @@ export default function Home() {
           className={styles.artworkQuestion}
           width={75}
           height={88}
-          priority
+          loading="lazy"
         />
         <div className={styles.whoWeArePoints}>
           <div className={styles.whoWeArePoint1}>
@@ -147,7 +147,7 @@ export default function Home() {
               className={styles.macbookMockup}
               width={448}
               height={294}
-              priority
+              loading="lazy"
             />
             <button className={styles.ourWorksButton}>More</button>
           </div>
@@ -158,12 +158,12 @@ export default function Home() {
               your team.
             </span>
             <Image
-              src="/macbookMockup1.svg"
+              src="/macbookMockup2.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
               height={294}
-              priority
+              loading="lazy"
             />
             <button className={styles.ourWorksButton}>More</button>
           </div>
@@ -175,12 +175,12 @@ export default function Home() {
               part of service level and license agreements.
             </span>
             <Image
-              src="/macbookMockup1.svg"
+              src="/macbookMockup3.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
               height={294}
-              priority
+              loading="lazy"
             />
             <button className={styles.ourWorksButton}>More</button>
           </div>
@@ -191,12 +191,12 @@ export default function Home() {
               up-to-date with the latest regulatory <br /> developments.
             </span>
             <Image
-              src="/macbookMockup1.svg"
+              src="/macbookMockup4.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
               height={294}
-              priority
+              loading="lazy"
             />
             <button className={styles.ourWorksButton}>More</button>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
             className={styles.solvingProblemImage}
             width={59}
             height={66}
-            priority
+            loading="lazy"
           />
           <span className={styles.solvingProblemText}>
             Startups create a world that actually is better. <br /> Any problem
@@ -223,7 +223,7 @@ export default function Home() {
             className={styles.solvingProblemImageRight}
             width={59}
             height={66}
-            priority
+            loading="lazy"
           />
         </div>
       </div>
@@ -234,7 +234,7 @@ export default function Home() {
           className={styles.weAreHiringImageLeft}
           width={291}
           height={319}
-          priority
+          loading="lazy"
         />
         <div className={styles.weAreHiringMiddle}>
           <span className={styles.weAreHiringTittle}>We are hiring!</span>
@@ -253,9 +253,65 @@ export default function Home() {
           className={styles.weAreHiringImageRight}
           width={291}
           height={319}
-          priority
+          loading="lazy"
         />
       </div>
+
+      <div className={styles.areYouReady}>
+        <span className={styles.areYouReadyTitle}>
+          Are you ready <br /> to board this rocket ship?
+        </span>
+        <div className={styles.areYouReadyText}>
+          Share your excitement with us.
+        </div>
+        <div className={styles.areYouReadyMessageCard}>
+          <input
+            className={styles.areYouReadyMessageCardInputName}
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name*"
+            required
+            minlength="4"
+            maxlength="15"
+            size="10"
+          />
+          <input
+            className={styles.areYouReadyMessageCardInputEmail}
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email*"
+            required
+            minlength="4"
+            maxlength="15"
+            size="10"
+          />
+          <textarea
+            className={styles.areYouReadyMessageCardInputMessage}
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message*"
+            required
+            minlength="4"
+            maxlength="999"
+            size="10"
+          />
+          <button className={styles.areYouReadyMessageCardButton}>
+            See current openings
+          </button>
+        </div>
+        <Image
+          src="/rocket.svg"
+          alt="Vercel Logo"
+          className={styles.areYouReadyImageRocket}
+          width={667}
+          height={544}
+          loading="lazy"
+        />
+      </div>
+
       {/* //////////////////////////////////////// */}
       <div className={styles.all}>
         <div className={styles.description}>
