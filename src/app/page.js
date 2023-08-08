@@ -5,16 +5,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
-        <div>
-          <Image
-            src="/companyLogo.svg"
-            alt="Vercel Logo"
-            className={styles.companyLogo}
-            width={199}
-            height={47}
-            priority
-          />
-        </div>
+        <Image
+          src="/companyLogo.svg"
+          alt="Vercel Logo"
+          className={styles.companyLogo}
+          width={199}
+          height={47}
+          priority
+        />
+
         <div className={styles.rightSideHeader}>
           <button className={styles.startupsContactButton}>Startups</button>
           <button className={styles.startupsContactButton}>Contact</button>
@@ -31,15 +30,14 @@ export default function Home() {
           </div>
           <button className={styles.workWithUsButton}>See our works</button>
         </div>
-        <div className={styles.seeOurWorksImage}>
           <Image
-            src="/artwork.svg"
+            src="/artwork.png"
             alt="artwork"
+            className={styles.seeOurWorksImage}
             width={705}
             height={507}
             priority
           />
-        </div>
       </div>
 
       <div className={styles.whoWeAre}>
@@ -51,7 +49,7 @@ export default function Home() {
           possibilities of today.
         </span>
         <Image
-          src="/artworkQuestion.svg"
+          src="/artworkQuestion.png"
           alt="Vercel Logo"
           className={styles.artworkQuestion}
           width={75}
@@ -83,7 +81,7 @@ export default function Home() {
       </div>
       <div className={styles.solvingProblem}>
         <Image
-          src="/thumb.svg"
+          src="/thumb.png"
           alt="Vercel Logo"
           width={59}
           height={66}
@@ -93,7 +91,7 @@ export default function Home() {
           We love solving problems!
         </span>
         <Image
-          src="/thumb.svg"
+          src="/thumb.png"
           alt="Vercel Logo"
           className={styles.solvingProblemRightImage}
           width={59}
@@ -105,7 +103,7 @@ export default function Home() {
       <div className={styles.whoWeAre}>
         <span className={styles.ourCoreValuesText}>Our core values</span>
         <Image
-          src="/artworkBulb.svg"
+          src="/artworkBulb.png"
           alt="Vercel Logo"
           className={styles.artworkQuestion}
           width={75}
@@ -142,7 +140,7 @@ export default function Home() {
               single integrated solution.
             </span>
             <Image
-              src="/macbookMockup1.svg"
+              src="/macbookMockup1.png"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -158,7 +156,7 @@ export default function Home() {
               your team.
             </span>
             <Image
-              src="/macbookMockup2.svg"
+              src="/macbookMockup2.png"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -175,7 +173,7 @@ export default function Home() {
               part of service level and license agreements.
             </span>
             <Image
-              src="/macbookMockup3.svg"
+              src="/macbookMockup3.png"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -191,7 +189,7 @@ export default function Home() {
               up-to-date with the latest regulatory <br /> developments.
             </span>
             <Image
-              src="/macbookMockup4.svg"
+              src="/macbookMockup4.png"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -205,7 +203,7 @@ export default function Home() {
       <div className={styles.solvingProblemWidget}>
         <div className={styles.solvingProblem}>
           <Image
-            src="/thumb.svg"
+            src="/thumb.png"
             alt="Vercel Logo"
             className={styles.solvingProblemImage}
             width={59}
@@ -218,7 +216,7 @@ export default function Home() {
             a huge opportunity.
           </span>
           <Image
-            src="/thumb.svg"
+            src="/thumb.png"
             alt="Vercel Logo"
             className={styles.solvingProblemImageRight}
             width={59}
@@ -229,7 +227,7 @@ export default function Home() {
       </div>
       <div className={styles.weAreHiring}>
         <Image
-          src="/frame4.svg"
+          src="/frame4.png"
           alt="Vercel Logo"
           className={styles.weAreHiringImageLeft}
           width={291}
@@ -248,7 +246,7 @@ export default function Home() {
           </button>
         </div>
         <Image
-          src="/frame5.svg"
+          src="/frame5.png"
           alt="Vercel Logo"
           className={styles.weAreHiringImageRight}
           width={291}
@@ -272,8 +270,8 @@ export default function Home() {
             name="name"
             placeholder="Name*"
             required
-            minlength="4"
-            maxlength="15"
+            minLength="4"
+            maxLength="15"
             size="10"
           />
           <input
@@ -283,8 +281,8 @@ export default function Home() {
             name="email"
             placeholder="Email*"
             required
-            minlength="4"
-            maxlength="15"
+            minLength="4"
+            maxLength="15"
             size="10"
           />
           <textarea
@@ -294,8 +292,8 @@ export default function Home() {
             name="message"
             placeholder="Message*"
             required
-            minlength="4"
-            maxlength="999"
+            minLength="4"
+            maxLength="999"
             size="10"
           />
           <button className={styles.areYouReadyMessageCardButton}>
@@ -312,91 +310,63 @@ export default function Home() {
         />
       </div>
 
-      {/* //////////////////////////////////////// */}
-      <div className={styles.all}>
-        <div className={styles.description}>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
+      <div className={styles.footer}>
+        <div className={styles.footerLogo}>
           <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
+            src="/companyLogo.svg"
+            alt="Vercel Logo"
+            className={styles.companyLogoFooter}
+            width={178}
+            height={42}
+            loading="lazy"
           />
+          <span className={styles.footerText}>
+            © 2020 Startupz. <br /> All rights reserved.
+          </span>
         </div>
+        <div className={styles.footerCompany}>
+          <span className={styles.footerTitle}>Companies</span>
+          <span className={styles.footerCompanyItems}>Tolq</span>
+          <span className={styles.footerCompanyItems}>Codekeeper</span>
+          <span className={styles.footerCompanyItems}>Feedback</span>
+          <span className={styles.footerCompanyItems}>Labs</span>
+        </div>
+        <div className={styles.footerCotact}>
+          <span className={styles.footerTitle}>Contact</span>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL with Vercel.
-            </p>
-          </a>
+          <span className={styles.footerCotactText}>
+            World Trade Center - The Hague <br /> Prinses Margrietplantsoen 33{" "}
+            <br /> 2595 AM The Hague <br />
+            The Netherlands
+          </span>
+          <span className={styles.footerCotactButton}>Send us an email</span>
+        </div>
+        <div className={styles.footerFollowUs}>
+          <span className={styles.footerTitle}> Follow us</span>
+          <Image
+            src="/twitter.svg"
+            alt="Twitter"
+            className={styles.footerFollowUsIcon}
+            width={23}
+            height={23}
+            loading="lazy"
+          />
+          <Image
+            src="/linkedin.svg"
+            alt="Linkedin"
+            className={styles.footerFollowUsIcon}
+            width={23}
+            height={23}
+            loading="lazy"
+          />
+          <Image
+            src="/instagram.svg"
+            alt="Instagram"
+            className={styles.footerFollowUsIcon}
+            width={23}
+            height={23}
+            loading="lazy"
+          />
         </div>
       </div>
     </main>

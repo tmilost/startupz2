@@ -476,6 +476,79 @@
   }
   position: relative;
 }
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 90px 136px 120px 120px;
+  .footerLogo {
+    display: flex;
+    flex-direction: column;
+    .companyLogoFooter {
+      margin-bottom: 84px;
+    }
+    .footerText {
+      color: #939393;
+      font-family: Circular Std;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+    }
+  }
+
+  .footerTitle {
+    color: #3d4f5c;
+    font-family: Circular Std;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
+    padding: 10px 0 19px 0;
+  }
+  .footerCompany {
+    display: flex;
+    flex-direction: column;
+
+    .footerCompanyItems {
+      color: var(--complementary-green, #46b8c8);
+      font-family: Circular Std;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px; /* 194.444% */
+    }
+  }
+  .footerCotact {
+    display: flex;
+    flex-direction: column;
+    .footerCotactText{
+      color: #939393;
+      font-family: Circular Std;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      padding-bottom: 11px;
+    }
+    .footerCotactButton{
+      color: var(--complementary-green, #46B8C8);
+      font-family: Circular Std;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+    }
+  }
+  .footerFollowUs {
+    display: flex;
+    flex-direction: column;
+    .footerFollowUsIcon:not(:last-child) {
+      margin-bottom: 15px;
+
+    }
+  }
+}
 ///////////////////////////////////
 .all {
   padding-top: 500px;
