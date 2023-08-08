@@ -23,7 +23,7 @@
         border: 0;
         background-color: transparent;
         color: #3d4f5c;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -53,7 +53,7 @@
       z-index: 10;
       .seeOurWorksTextOne {
         color: #3d4f5c;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 85px;
         font-style: normal;
         font-weight: 700;
@@ -63,7 +63,7 @@
       }
       .seeOurWorksTextTwo {
         color: var(--primary-orange, #fb8958);
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -79,7 +79,7 @@
         border-radius: 32.5px;
         background: #46b8c8;
         color: #fff;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -102,7 +102,7 @@
     padding: 147px 0 0 120px;
     .whoWeAreText1 {
       color: #3d4f5c;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 50px;
       font-style: normal;
       font-weight: 700;
@@ -112,7 +112,7 @@
     .whoWeAreText2 {
       padding: 32px 0 79px 0;
       color: var(--primary-orange, #fb8958);
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
@@ -144,7 +144,7 @@
         padding-bottom: 19px;
         width: 50px;
         color: var(--primary-orange, #fb8958);
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 30px;
         font-style: normal;
         font-weight: 700;
@@ -154,7 +154,7 @@
       .whoWeArePointText {
         padding: 26px 95px 0 0;
         color: #3d4f5c;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 30px;
         font-style: normal;
         font-weight: 400;
@@ -170,7 +170,7 @@
     .solvingProblemText {
       color: var(--primary-orange, #fb8958);
       text-align: center;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 40px;
       font-style: normal;
       font-weight: 700;
@@ -185,7 +185,7 @@
   }
   .ourCoreValuesText {
     color: #3d4f5c;
-    font-family: Circular Std;
+    font-family: var(--font-circularStd);
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
@@ -200,7 +200,7 @@
     display: flex;
     justify-content: center;
     color: #3d4f5c;
-    font-family: Circular Std;
+    font-family: var(--font-circularStd);
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
@@ -222,15 +222,15 @@
       box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
       margin-bottom: 25px;
       &:nth-child(1) {
-        margin-right: 24px;
+        margin-right: 20px;
       }
       &:nth-child(3) {
-        margin-right: 24px;
+        margin-right: 20px;
       }
       .ourWorkTitle1 {
         color: #a9bc87;
         text-align: center;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -241,7 +241,7 @@
       .ourWorkTitle2 {
         color: #8bb5c9;
         text-align: center;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -252,7 +252,7 @@
       .ourWorkTitle3 {
         color: #00a0b6;
         text-align: center;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -263,7 +263,7 @@
       .ourWorkTitle4 {
         color: #8b60d3;
         text-align: center;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -274,7 +274,7 @@
       .ourWorkText {
         color: #3d4f5c;
         text-align: center;
-        font-family: Circular Std;
+        font-family: var(--font-circularStd);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -333,7 +333,7 @@
     .weAreHiringTittle {
       color: #3d4f5c;
       text-align: center;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 50px;
       font-style: normal;
       font-weight: 700;
@@ -344,7 +344,7 @@
     .weAreHiringText {
       color: var(--primary-orange, #fb8958);
       text-align: center;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
@@ -360,7 +360,7 @@
       border-radius: 32.5px;
       background: #46b8c8;
       color: #fff;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
@@ -377,7 +377,7 @@
 
   .areYouReadyTitle {
     color: #fff;
-    font-family: Circular Std;
+    font-family: var(--font-circularStd);
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
@@ -452,7 +452,7 @@
       background: #3d4f5c;
       color: #fbfbfa;
       text-align: center;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
@@ -480,7 +480,7 @@
     }
     .footerText {
       color: #939393;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -489,7 +489,7 @@
   }
   .footerTitle {
     color: #3d4f5c;
-    font-family: Circular Std;
+    font-family: var(--font-circularStd);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -501,7 +501,7 @@
     flex-direction: column;
     .footerCompanyItems {
       color: var(--complementary-green, #46b8c8);
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -513,7 +513,7 @@
     flex-direction: column;
     .footerCotactText {
       color: #939393;
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -522,7 +522,7 @@
     }
     .footerCotactButton {
       color: var(--complementary-green, #46b8c8);
-      font-family: Circular Std;
+      font-family: var(--font-circularStd);
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -600,7 +600,7 @@
 
       padding: 60px 0 70px 0;
       .areYouReadyMessageCard {
-        width: 100%;
+        width: 90%;
         .areYouReadyMessageCardInputName {
           width: 100%;
         }
@@ -687,7 +687,7 @@
     }
   }
 }
-@media screen and (min-width: 1121px) and (max-width: 1441px) {
+@media screen and (min-width: 1121px) and (max-width: 1434px) {
   .ourWorks {
     .ourWorksGrid {
       flex-direction: column;
