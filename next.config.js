@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-};
+    output: "export",
+    basePath: "/startupz",
+    images: {
+      unoptimized: true,
+    },
+  };
 
 module.exports = nextConfig;
 
