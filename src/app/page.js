@@ -30,14 +30,14 @@ export default function Home() {
           </div>
           <button className={styles.workWithUsButton}>See our works</button>
         </div>
-          <Image
-            src="/artwork.png"
-            alt="artwork"
-            className={styles.seeOurWorksImage}
-            width={705}
-            height={507}
-            priority
-          />
+        <Image
+          src="/artwork.png"
+          alt="artwork"
+          className={styles.seeOurWorksImage}
+          width={705}
+          height={507}
+          priority
+        />
       </div>
 
       <div className={styles.whoWeAre}>
@@ -140,7 +140,7 @@ export default function Home() {
               single integrated solution.
             </span>
             <Image
-              src="/macbookMockup1.png"
+              src="/macbookMockupOne.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -156,7 +156,7 @@ export default function Home() {
               your team.
             </span>
             <Image
-              src="/macbookMockup2.png"
+              src="/macbookMockupTwo.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -173,7 +173,7 @@ export default function Home() {
               part of service level and license agreements.
             </span>
             <Image
-              src="/macbookMockup3.png"
+              src="/macbookMockupThree.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -189,7 +189,7 @@ export default function Home() {
               up-to-date with the latest regulatory <br /> developments.
             </span>
             <Image
-              src="/macbookMockup4.png"
+              src="/macbookMockupFour.svg"
               alt="Vercel Logo"
               className={styles.macbookMockup}
               width={448}
@@ -262,43 +262,45 @@ export default function Home() {
         <div className={styles.areYouReadyText}>
           Share your excitement with us.
         </div>
-        <div className={styles.areYouReadyMessageCard}>
-          <input
-            className={styles.areYouReadyMessageCardInputName}
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name*"
-            required
-            minLength="4"
-            maxLength="15"
-            size="10"
-          />
-          <input
-            className={styles.areYouReadyMessageCardInputEmail}
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Email*"
-            required
-            minLength="4"
-            maxLength="15"
-            size="10"
-          />
-          <textarea
-            className={styles.areYouReadyMessageCardInputMessage}
-            type="text"
-            id="message"
-            name="message"
-            placeholder="Message*"
-            required
-            minLength="4"
-            maxLength="999"
-            size="10"
-          />
-          <button className={styles.areYouReadyMessageCardButton}>
-            See current openings
-          </button>
+        <div className={styles.areYouReadyCard}>
+          <div className={styles.areYouReadyMessageCard}>
+            <input
+              className={styles.areYouReadyMessageCardInputName}
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name*"
+              required
+              minLength="4"
+              maxLength="15"
+              size="10"
+            />
+            <input
+              className={styles.areYouReadyMessageCardInputEmail}
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email*"
+              required
+              minLength="4"
+              maxLength="15"
+              size="10"
+            />
+            <textarea
+              className={styles.areYouReadyMessageCardInputMessage}
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Message*"
+              required
+              minLength="4"
+              maxLength="999"
+              size="10"
+            />
+            <button className={styles.areYouReadyMessageCardButton}>
+              See current openings
+            </button>
+          </div>
         </div>
         <Image
           src="/rocket.svg"

@@ -2,7 +2,6 @@
   margin: auto;
   min-height: 100vh;
   max-width: 1440px;
-
   .header {
     width: 100%;
     display: flex;
@@ -37,7 +36,6 @@
         flex-shrink: 0;
         border-radius: 32.5px;
         color: #46b8c8;
-
         border: 1px solid #46b8c8;
         background-color: transparent;
       }
@@ -52,6 +50,7 @@
     .seeOurWorksText {
       position: absolute;
       padding-left: 120px;
+      z-index: 10;
       .seeOurWorksTextOne {
         color: #3d4f5c;
         font-family: Circular Std;
@@ -144,7 +143,6 @@
         border-bottom: 1px solid #3d4f5c;
         padding-bottom: 19px;
         width: 50px;
-
         color: var(--primary-orange, #fb8958);
         font-family: Circular Std;
         font-size: 30px;
@@ -155,7 +153,6 @@
       }
       .whoWeArePointText {
         padding: 26px 95px 0 0;
-
         color: #3d4f5c;
         font-family: Circular Std;
         font-size: 30px;
@@ -166,7 +163,6 @@
       }
     }
   }
-
   .solvingProblem {
     display: flex;
     justify-content: center;
@@ -308,7 +304,6 @@
 }
 .solvingProblemWidget {
   margin: 34px 0 40px 0;
-
   .solvingProblemImage {
     margin: auto 0 auto 0;
   }
@@ -334,7 +329,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    z-index: 10;
     .weAreHiringTittle {
       color: #3d4f5c;
       text-align: center;
@@ -375,7 +370,6 @@
     }
   }
 }
-
 .areYouReady {
   background: var(--secondary-yellow, #ffc351);
   padding: 60px 0 70px 124px;
@@ -446,19 +440,16 @@
       padding: 18px 16px;
       margin-bottom: 34px;
       resize: none;
-
       &:focus {
         outline: none;
       }
     }
-
     .areYouReadyMessageCardButton {
       width: 243px;
       height: 45px;
       border-radius: 32.5px;
       border: 1px solid #3d4f5c;
       background: #3d4f5c;
-
       color: #fbfbfa;
       text-align: center;
       font-family: Circular Std;
@@ -496,7 +487,6 @@
       line-height: 30px; /* 166.667% */
     }
   }
-
   .footerTitle {
     color: #3d4f5c;
     font-family: Circular Std;
@@ -509,7 +499,6 @@
   .footerCompany {
     display: flex;
     flex-direction: column;
-
     .footerCompanyItems {
       color: var(--complementary-green, #46b8c8);
       font-family: Circular Std;
@@ -522,7 +511,7 @@
   .footerCotact {
     display: flex;
     flex-direction: column;
-    .footerCotactText{
+    .footerCotactText {
       color: #939393;
       font-family: Circular Std;
       font-size: 18px;
@@ -531,8 +520,8 @@
       line-height: 24px; /* 133.333% */
       padding-bottom: 11px;
     }
-    .footerCotactButton{
-      color: var(--complementary-green, #46B8C8);
+    .footerCotactButton {
+      color: var(--complementary-green, #46b8c8);
       font-family: Circular Std;
       font-size: 18px;
       font-style: normal;
@@ -545,231 +534,172 @@
     flex-direction: column;
     .footerFollowUsIcon:not(:last-child) {
       margin-bottom: 15px;
-
     }
   }
 }
-///////////////////////////////////
-.all {
-  padding-top: 500px;
-}
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
+@media (max-width: 701px) {
+  .main {
+    .header {
+      padding: 0 10px 0 10px;
+      flex-direction: column;
+    }
+    .whoWeAre {
+      padding: 90px 0 0 25px;
+      .artworkQuestion {
+        display: none;
+      }
+      .whoWeArePoints .whoWeArePointText {
+        padding: 26px 6px 0 0;
+      }
+    }
+    .seeOurWorks {
+      .seeOurWorksText {
+        padding-left: 25px;
+      }
+      .seeOurWorksImage {
+        display: none;
+      }
+    }
+    .ourWorks {
+      padding: 0 25px 0 25px;
+      .ourWorksGrid {
+        flex-direction: column;
+        align-items: center;
+        .ourWork {
+          width: 100%;
+          .macbookMockup {
+            width: 100%;
+          }
+          &:nth-child(1) {
+            margin-right: 0;
+          }
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .weAreHiring {
+      .weAreHiringImageLeft {
+        display: none;
+      }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
+      .weAreHiringImageRight {
+        display: none;
+      }
+      .weAreHiringMiddle {
+        .weAreHiringText {
+          padding: 0 5px 30px 5px;
+        }
+      }
+    }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
+    .areYouReady {
+      text-align: center;
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
+      padding: 60px 0 70px 0;
+      .areYouReadyMessageCard {
+        width: 100%;
+        .areYouReadyMessageCardInputName {
+          width: 100%;
+        }
+        .areYouReadyMessageCardInputEmail {
+          width: 100%;
+        }
+        .areYouReadyMessageCardInputMessage {
+          width: 100%;
+        }
+      }
+      .areYouReadyCard {
+        display: flex;
+        justify-content: center;
+      }
+      .areYouReadyImageRocket {
+        display: none;
+      }
+    }
+    .footer {
+      flex-direction: column;
+      padding: 90px 25px 120px 25px;
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
+      & > *:not(:last-child) {
+        border-bottom: 5px solid #fbfafa;
+        width: 100%;
+      }
+    }
   }
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
+@media screen and (min-width: 702px) and (max-width: 1120px) {
+  .main {
+    .header {
+      padding: 0 10px 0 10px;
+    }
+    .whoWeAre {
+      padding: 90px 0 0 25px;
+      .artworkQuestion {
+        top: 65px;
+        margin-right: 259px;
+      }
+      .whoWeArePoints .whoWeArePointText {
+        padding: 26px 6px 0 0;
+      }
+    }
+    .seeOurWorks {
+      .seeOurWorksText {
+        padding-left: 25px;
+      }
+      .seeOurWorksImage {
+        display: none;
+      }
+    }
+    .ourWorks {
+      padding: 0 25px 0 25px;
+      .ourWorksGrid {
+        flex-direction: column;
+        align-items: center;
+        .ourWork {
+          &:nth-child(1) {
+            margin-right: 0;
+          }
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .areYouReady {
+      text-align: center;
+
+      padding: 60px 0 70px 0;
+
+      .areYouReadyCard {
+        display: flex;
+        justify-content: center;
+      }
+      .areYouReadyImageRocket {
+        display: none;
+      }
+    }
+    .footer {
+      padding: 90px 25px 120px 25px;
+    }
   }
 }
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  /* .vercelLogo {
-    filter: invert(1);
-  } */
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
+@media screen and (min-width: 1121px) and (max-width: 1441px) {
+  .ourWorks {
+    .ourWorksGrid {
+      flex-direction: column;
+      align-items: center;
+      .ourWork {
+        &:nth-child(1) {
+          margin-right: 0;
+        }
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
