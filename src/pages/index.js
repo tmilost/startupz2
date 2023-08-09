@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 import localFont from 'next/font/local'
 
-const circularStd = localFont({ src: '../../public/circularStd.ttf' })
+const circularStd = localFont({ src: '../../static/circularStd.ttf' })
 
 export default function Home() {
   return (
