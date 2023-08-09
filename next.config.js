@@ -1,11 +1,12 @@
-/**
- * @type {import('next').NextConfig}
- */
- const nextConfig = {
-    output: 'export'
-  }
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 
-module.exports = nextConfig;
+  basePath: '/startupz',
+  output: 'export',
+}
+
+module.exports = nextConfig
 
 module.exports = {
   async headers() {
