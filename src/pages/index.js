@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "./Home.module.scss";
+import styles from "./home.module.scss";
 import localFont from 'next/font/local'
 
 const circularStd = localFont({ src: '../../static/circularStd.ttf' })
@@ -21,7 +21,6 @@ export default function Home() {
             className={styles.companyLogo}
             width={199}
             height={47}
-            priority
           />
 
           <div className={styles.rightSideHeader}>
@@ -46,7 +45,6 @@ export default function Home() {
             className={styles.seeOurWorksImage}
             width={705}
             height={507}
-            priority
           />
         </div>
 
