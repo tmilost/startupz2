@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 
 const circularStd = localFont({ src: '../../static/circularStd.ttf' })
 
+
 export default function Home() {
   return (
     <>
