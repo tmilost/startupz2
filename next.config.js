@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  basePath: '/startupz/',
+  basePath: '/startupz',
   output: 'export',
 }
 
