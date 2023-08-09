@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 import localFont from 'next/font/local'
 
 const circularStd = localFont({ src: '../../static/circularStd.ttf' })
-
 
 export default function Home() {
   return (
@@ -17,8 +15,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${circularStd.className}`}>
         <div className={styles.header}>
-          <Image
-            src="/companyLogo.svg"
+          <img
+            src="static/companyLogo.svg"
             alt="company logo"
             className={styles.companyLogo}
             width={199}
@@ -42,8 +40,8 @@ export default function Home() {
             </div>
             <button className={styles.workWithUsButton}>See our works</button>
           </div>
-          <Image
-            src="/artwork.png"
+          <img
+            src="static/artwork.png"
             alt="artwork"
             className={styles.seeOurWorksImage}
             width={705}
@@ -60,8 +58,8 @@ export default function Home() {
             We value working with talented people that understand the
             possibilities of today.
           </span>
-          <Image
-            src="/artworkQuestion.png"
+          <img
+            src="static/artworkQuestion.png"
             alt="artwork question"
             className={styles.artworkQuestion}
             width={75}
@@ -93,8 +91,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.solvingProblem}>
-          <Image
-            src="/thumb.png"
+          <img
+            src="static/thumb.png"
             alt="Vercel Logo"
             width={59}
             height={66}
@@ -103,8 +101,8 @@ export default function Home() {
           <span className={styles.solvingProblemText}>
             We love solving problems!
           </span>
-          <Image
-            src="/thumb.png"
+          <img
+            src="static/thumb.png"
             alt="Vercel Logo"
             className={styles.solvingProblemRightImage}
             width={59}
@@ -115,8 +113,8 @@ export default function Home() {
 
         <div className={styles.whoWeAre}>
           <span className={styles.ourCoreValuesText}>Our core values</span>
-          <Image
-            src="/artworkBulb.png"
+          <img
+            src="static/artworkBulb.png"
             alt="Vercel Logo"
             className={styles.artworkQuestion}
             width={75}
@@ -153,8 +151,8 @@ export default function Home() {
                 provides all pieces of the localization puzzle in one <br />{" "}
                 single integrated solution.
               </span>
-              <Image
-                src="/macbookMockupOne.svg"
+              <img
+                src="static/macbookMockupOne.svg"
                 alt="Vercel Logo"
                 className={styles.macbookMockup}
                 width={448}
@@ -169,8 +167,8 @@ export default function Home() {
                 Feedback Labs turns feedback into actionable insights <br /> for
                 your team.
               </span>
-              <Image
-                src="/macbookMockupTwo.svg"
+              <img
+                src="static/macbookMockupTwo.svg"
                 alt="Vercel Logo"
                 className={styles.macbookMockup}
                 width={448}
@@ -186,8 +184,8 @@ export default function Home() {
                 developers and publishers to provide source code escrow <br />{" "}
                 as part of service level and license agreements.
               </span>
-              <Image
-                src="/macbookMockupThree.svg"
+              <img
+                src="static/macbookMockupThree.svg"
                 alt="Vercel Logo"
                 className={styles.macbookMockup}
                 width={448}
@@ -203,8 +201,8 @@ export default function Home() {
                 always up-to-date with the latest regulatory <br />{" "}
                 developments.
               </span>
-              <Image
-                src="/macbookMockupFour.svg"
+              <img
+                src="static/macbookMockupFour.svg"
                 alt="Vercel Logo"
                 className={styles.macbookMockup}
                 width={448}
@@ -217,8 +215,8 @@ export default function Home() {
         </div>
         <div className={styles.solvingProblemWidget}>
           <div className={styles.solvingProblem}>
-            <Image
-              src="/thumb.png"
+            <img
+              src="static/thumb.png"
               alt="Vercel Logo"
               className={styles.solvingProblemImage}
               width={59}
@@ -230,8 +228,8 @@ export default function Home() {
               problem that can be solved , will be solved <br /> by a startup,
               and that is a huge opportunity.
             </span>
-            <Image
-              src="/thumb.png"
+            <img
+              src="static/thumb.png"
               alt="Vercel Logo"
               className={styles.solvingProblemImageRight}
               width={59}
@@ -241,8 +239,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.weAreHiring}>
-          <Image
-            src="/frame4.png"
+          <img
+            src="static/frame4.png"
             alt="Vercel Logo"
             className={styles.weAreHiringImageLeft}
             width={291}
@@ -260,8 +258,8 @@ export default function Home() {
               See current openings
             </button>
           </div>
-          <Image
-            src="/frame5.png"
+          <img
+            src="static/frame5.png"
             alt="Vercel Logo"
             className={styles.weAreHiringImageRight}
             width={291}
@@ -317,8 +315,8 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <Image
-            src="/rocket.svg"
+          <img
+            src="static/rocket.svg"
             alt="Vercel Logo"
             className={styles.areYouReadyImageRocket}
             width={667}
@@ -329,8 +327,8 @@ export default function Home() {
 
         <div className={styles.footer}>
           <div className={styles.footerLogo}>
-            <Image
-              src="/companyLogo.svg"
+            <img
+              src="static/companyLogo.svg"
               alt="Vercel Logo"
               className={styles.companyLogoFooter}
               width={178}
@@ -360,24 +358,24 @@ export default function Home() {
           </div>
           <div className={styles.footerFollowUs}>
             <span className={styles.footerTitle}> Follow us</span>
-            <Image
-              src="/twitter.svg"
+            <img
+              src="static/twitter.svg"
               alt="Twitter"
               className={styles.footerFollowUsIcon}
               width={23}
               height={23}
               loading="lazy"
             />
-            <Image
-              src="/linkedin.svg"
+            <img
+              src="static/linkedin.svg"
               alt="Linkedin"
               className={styles.footerFollowUsIcon}
               width={23}
               height={23}
               loading="lazy"
             />
-            <Image
-              src="/instagram.svg"
+            <img
+              src="static/instagram.svg"
               alt="Instagram"
               className={styles.footerFollowUsIcon}
               width={23}
