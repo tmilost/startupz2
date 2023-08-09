@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   basePath: '/startupz',
+  assetPrefix:"/startupz",
   output: 'export',
 }
 
